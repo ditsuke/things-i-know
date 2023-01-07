@@ -54,6 +54,8 @@ exmap linedown :obcommand editor:swap-line-down
 
 exmap movefile :obcommand file-explorer:move-file
 exmap new :obcommand file-explorer:new-file
+exmap gotodef :obcommand editor:open-link-in-new-leaf
+exmap gotodefsplit :obcommand editor:open-link-in-new-split
 
 " ================================================================|
 " Composites from the plugin-provided :surround
@@ -102,6 +104,8 @@ nmap zM :foldall
 nmap L :tabnext
 nmap H :tabprev
 
+nmap gd :gotodef
+nmap gD :gotodefsplit
 
 nmap | :vsplit
 nmap \ :split
@@ -116,6 +120,7 @@ unmap <Space>  " Essential for chords starting with <Space>
 
 nmap <Space>q :quit
 nmap <Space>e :Ex
+nmap <Space>fn :new
 nmap <Space>ff :switcher
 nmap <Space>fc :commands
 nmap <Space>fw :textsearch
