@@ -1,0 +1,79 @@
+{
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "workspace:close": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F4"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "editor:insert-link": [],
+  "workspace:next-tab": [],
+  "workspace:previous-tab": [],
+  "editor:focus-top": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "K"
+    }
+  ],
+  "editor:focus-bottom": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "J"
+    }
+  ],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ],
+  "editor:focus-right": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "L"
+    }
+  ]
+}
