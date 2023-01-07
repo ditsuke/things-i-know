@@ -1,0 +1,4 @@
+# Activating Windows, Illicitly
+There are a number of tools to activate Windows and/or Office, starting with KMS38 that works for both but requires periodic reapplication (scriptable) and with the best option being HWID Gen, which apparently uses Microsoft's Retail Activation severs to generate legitimate windows licenses.
+
+The both of these tools and more are bundled in and packed by [MAS - Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts), which includes additional functionality such as changing the active Windows license to, for example, switch from the Home editions to the Pro editions.

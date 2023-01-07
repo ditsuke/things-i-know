@@ -1,0 +1,1 @@
+Fedora probably ships with [[xsel]].

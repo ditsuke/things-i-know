@@ -1,0 +1,2 @@
+- The autocomplete way: start with `#!` and Discord lists voice channel in the curent server.
+- The non-autocomplete way: copy voice channel ID (needs developer mode enabled) and mention like `<#$CHANNEL_ID>`. This way works with bots and even outside of the parent server (in other servers and private chats).

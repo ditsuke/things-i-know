@@ -1,0 +1,2 @@
+- Desktop files for usual applications are stored in `/usr/share/applications`
+- For flatpak apps, this location is (most probably) `/var/lib/flatpak/exports/share/applications`
