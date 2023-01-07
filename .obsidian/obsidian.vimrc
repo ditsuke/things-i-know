@@ -1,9 +1,25 @@
 " A vimrc for Obsidian's `vim` emulation, made possible by the fantastic
 " `obsidian-vimrc-support` community plugin (https://github.com/esm7/obsidian-vimrc-support)
 
+
 " ==============================================================================================
+" Behavior
+" ==============================================================================================
+
+" Have j and k navigate visual lines rather than logical ones
+nmap j gj
+nmap k gk
+
+" Yank to system clipboard
+set clipboard=unnamed
+
+" ==============================================================================================
+" Commands
+" ==============================================================================================
+
+" ================================================================|
 " Get some vim commands back
-" ==============================================================================================
+" ================================================================|
 exmap quit :obcommand workspace:close
 exmap q :quit
 
@@ -14,7 +30,7 @@ exmap vsplit :obcommand workspace:split-vertical
 " (make sure to remove default Obsidian shortcuts for these to work)
 exmap back obcommand app:go-back
 exmap forward obcommand app:go-forward
-"
+
 " Tab switching
 exmap tabprev obcommand workspace:previous-tab
 exmap tabnext obcommand workspace:next-tab
@@ -24,36 +40,9 @@ exmap togglefold obcommand editor:toggle-fold
 exmap unfoldall obcommand editor:unfold-all
 exmap foldall obcommand editor:fold-all
 
-" ==============================================================================================
-" Get some vim keybindings back
-" ==============================================================================================
-
-" Location nav
-nmap <C-o> :back
-nmap <C-i> :forward
-
-" Tab nav
-nmap gt :tabnext
-nmap gT :tabprev
-
-" TODO: Get split navigation to work!
-" Somehow the obcommand editor:focus-bottom etc don't work.
-" Some missing context arg perhaps?
-nmap <C-w> :obcommand editor:focus-top
-nmap <C-w> :obcommand editor:focus-bottom
-nmap <C-w> :obcommand editor:focus-right
-nmap <C-w> :obcommand editor:focus-left
-
-" Folds
-nmap zo :togglefold
-nmap zc :togglefold
-nmap za :togglefold
-nmap zR :unfoldall
-nmap zM :foldall
-
-" ==============================================================================================
-" Useful commands
-" ==============================================================================================
+" ================================================================|
+" More useful commands
+" ================================================================|
 exmap Ex :obcommand file-explorer:open
 
 exmap switcher :obcommand switcher:open
@@ -66,19 +55,50 @@ exmap linedown :obcommand editor:swap-line-down
 exmap movefile :obcommand file-explorer:move-file
 exmap new :obcommand file-explorer:new-file
 
-" ==============================================================================================
-" Behavior
-" ==============================================================================================
-" Have j and k navigate visual lines rather than logical ones
-nmap j gj
-nmap k gk
+" ================================================================|
+" Composites from the plugin-provided :surround
+" ================================================================|
+exmap surround_wiki surround [[ ]]
+exmap surround_double_quotes surround " "
+exmap surround_single_quotes surround ' '
+exmap surround_brackets surround ( )
+exmap surround_square_brackets surround [ ]
+exmap surround_curly_brackets surround { }
 
-" Yank to system clipboard
-set clipboard=unnamed
+" ==============================================================================================
+" Keybindings
+" ==============================================================================================
 
-" ==============================================================================================
-" Keybindings I use
-" ==============================================================================================
+" ================================================================|
+" Get some vim-default bindings back
+" ================================================================|
+
+" Location nav
+nmap <C-o> :back
+nmap <C-i> :forward
+
+" Tab nav
+nmap gt :tabnext
+nmap gT :tabprev
+
+" TODO: Get split navigation to work!
+" Somehow the obcommand editor:focus-bottom etc don't work.
+" Some missing context arg perhaps?
+nmap <C-w>k :obcommand editor:focus-top
+nmap <C-w>j :obcommand editor:focus-bottom
+nmap <C-w>l :obcommand editor:focus-right
+nmap <C-w>h :obcommand editor:focus-left
+
+" Folds
+nmap zo :togglefold
+nmap zc :togglefold
+nmap za :togglefold
+nmap zR :unfoldall
+nmap zM :foldall
+
+" ================================================================|
+" Bindings I like
+" ================================================================|
 nmap L :tabnext
 nmap H :tabprev
 
@@ -103,26 +123,20 @@ nmap <Space>fm :movefile
 nmap <Space>h :nohlsearch
 
 " ================================================================|
-" Add mappings for the :surround command!
+" Mappings for the :surround command!
 " ================================================================|
-exmap surround_wiki surround [[ ]]
-exmap surround_double_quotes surround " "
-exmap surround_single_quotes surround ' '
-exmap surround_brackets surround ( )
-exmap surround_square_brackets surround [ ]
-exmap surround_curly_brackets surround { }
 
 " NOTE: must use 'map' and not 'nmap'
+" ?: and why?
 map [[ :surround_wiki
-nunmap s
-vunmap s
-map s" :surround_double_quotes
-map s' :surround_single_quotes
-map sb :surround_brackets
-map s( :surround_brackets
-map s) :surround_brackets
-map s[ :surround_square_brackets
-map s[ :surround_square_brackets
-map s{ :surround_curly_brackets
-map s} :surround_curly_brackets
-
+nunmap S
+vunmap S
+map S" :surround_double_quotes
+map S' :surround_single_quotes
+map Sb :surround_brackets
+map S( :surround_brackets
+map S) :surround_brackets
+map S[ :surround_square_brackets
+map S[ :surround_square_brackets
+map S{ :surround_curly_brackets
+map S} :surround_curly_brackets

@@ -19,7 +19,7 @@
             "id": "3d3b472062e3203b",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -152,8 +152,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6bde4a2ddf018ad",
+  "active": "3d3b472062e3203b",
   "lastOpenFiles": [
+    "desktop-entry-file.md",
     "TODO.md",
     "windows.md",
     "uget.md",
