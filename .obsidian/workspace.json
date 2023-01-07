@@ -11,15 +11,20 @@
             "id": "54549af0c3e5030e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tlp.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "3d3b472062e3203b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1c24f3feb5728830",
@@ -86,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tlp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,6 +152,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54549af0c3e5030e",
-  "lastOpenFiles": []
+  "active": "e6bde4a2ddf018ad",
+  "lastOpenFiles": [
+    "TODO.md",
+    "windows.md",
+    "uget.md",
+    "tlp.md",
+    "pop-launcher.md",
+    "oomd.md",
+    "discord.md",
+    "ChatGPT.md",
+    "git/git-hooks.md"
+  ]
 }
