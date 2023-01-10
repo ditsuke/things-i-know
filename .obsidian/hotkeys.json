@@ -42,8 +42,6 @@
     }
   ],
   "editor:insert-link": [],
-  "workspace:next-tab": [],
-  "workspace:previous-tab": [],
   "editor:focus-top": [
     {
       "modifiers": [
@@ -79,25 +77,12 @@
   "cycle-through-panes:cycle-through-panes": [
     {
       "modifiers": [
-        "Ctrl"
-      ],
-      "key": "Tab"
-    },
-    {
-      "modifiers": [
         "Alt"
       ],
       "key": "ArrowRight"
     }
   ],
   "cycle-through-panes:cycle-through-panes-reverse": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "Tab"
-    },
     {
       "modifiers": [
         "Alt"

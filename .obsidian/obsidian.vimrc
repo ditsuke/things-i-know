@@ -10,9 +10,6 @@
 nmap j gj
 nmap k gk
 
-" Yank to system clipboard
-set clipboard=unnamed
-
 " ==============================================================================================
 " Commands
 " ==============================================================================================
@@ -83,6 +80,10 @@ nmap <C-i> :forward
 nmap gt :tabnext
 nmap gT :tabprev
 
+" Splits
+nmap <C-w>s :split
+nmap <C-w>v :vsplit
+
 " TODO: Get split navigation to work!
 " Somehow the obcommand editor:focus-bottom etc don't work.
 " Some missing context arg perhaps?
@@ -126,6 +127,11 @@ nmap <Space>fc :commands
 nmap <Space>fw :textsearch
 nmap <Space>fm :movefile
 nmap <Space>h :nohlsearch
+
+" To system clipboard with <Space>-led bind.
+nmap <Space>y "+y
+vmap <Space>y "+y
+nmap <Space>Y "+Y
 
 " ================================================================|
 " Mappings for the :surround command!
