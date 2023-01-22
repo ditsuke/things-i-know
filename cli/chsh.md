@@ -7,3 +7,6 @@ The Ubuntu and Arch versions might be divergent, though, and not support the sam
 
 Or to change for root:
 `chsh -R -s /path/to/shell # needs confirming!!
+
+> NOTE:
+> The user needs to login again for the change to take effect.
