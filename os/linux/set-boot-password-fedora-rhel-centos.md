@@ -1,3 +1,5 @@
+#fedora
+
 [[fedora|Fedora]] 28+ doesn't configure a boot login on initial setup.
 
 As a consequence, if the boot process fails for some reason and Fedora enters emergency mode, it's a deadlock with a locked `root`. Reference: [ask.fedoraproject.org](https://ask.fedoraproject.org/t/howto-cannot-open-access-to-console-the-root-account-is-locked-in-emergency-mode-dracut-emergency-shell/2010).
