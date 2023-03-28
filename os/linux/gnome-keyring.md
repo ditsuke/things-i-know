@@ -1,0 +1,1 @@
+> [[gnome]] Keyring is a software application designed to store security credentials such as usernames, passwords, and keys, together with a small amount of relevant metadata. The sensitive data is encrypted and stored in a keyring file in the user's home directory. [Wikipedia](https://en.wikipedia.org/wiki/GNOME_Keyring)

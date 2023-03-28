@@ -3,5 +3,9 @@
   "obsidian-vimrc-support",
   "obsidian-relative-line-numbers",
   "cycle-through-panes",
-  "obsidian-git"
+  "obsidian-git",
+  "emoji-shortcodes",
+  "obsidian-linter",
+  "dataview",
+  "nldates-obsidian"
 ]

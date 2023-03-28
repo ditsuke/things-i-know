@@ -5,7 +5,7 @@ These freezes can be either temporary (lasting 10-30 seconds), or be permanent r
 
 So far, we only workarounds involving [[i915]] options: either turning `enable_dc=0` or `enable_psr=0`. Both of these methods disable some power-saving features of the i915 kernel module.
 
-To apply either of these patches, 
+To apply either of these patches,
 
 1. add to `/etc/modprobe.d/i915.conf`:
 ```conf

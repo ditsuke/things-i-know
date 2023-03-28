@@ -1,0 +1,22 @@
+{
+  "immediateReplace": true,
+  "suggester": true,
+  "historyPriority": true,
+  "historyLimit": 100,
+  "history": [
+    ":warning:",
+    ":disappointed:",
+    ":tm:",
+    ":star_struck:",
+    ":smiling_imp:",
+    ":smiling_face_with_tear:",
+    ":sob:",
+    ":sweat_smile:",
+    ":clown_face:",
+    ":black_joker:",
+    ":slightly_smiling_face:",
+    ":thumbsdown:",
+    ":full_moon_with_face:",
+    ":new_moon:"
+  ]
+}
