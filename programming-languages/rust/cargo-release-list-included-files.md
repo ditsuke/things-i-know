@@ -1,0 +1,1 @@
+`cargo package --list`. Related: [[cargo-include-exclude-files-in-published-release

@@ -1,0 +1,3 @@
+> JavaScript and the web programming has grown by leaps and bounds over the years, but the [same-origin policy](https://en.wikipedia.org/wiki/Same_origin_policy) still remains. This prevents JavaScript from making requests across domain boundaries, and has spawned various hacks for making cross-domain requests.
+> 
+> CORS introduces a standard mechanism that can be used by all browsers for implementing cross-domain requests. The spec defines a set of headers that allow the browser and server to communicate about which requests are (and are not) allowed. CORS continues the spirit of the open web by bringing API access to all.

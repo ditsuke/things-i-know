@@ -1,0 +1,1 @@
+`<C-r>` (that's CTRL-r for the uninitiated) followed by the register symbol (`*` as default for newest yank/deletion) pastes the contents of a register  in insert mode. This even works for search and command line modes!

@@ -1,0 +1,1 @@
+After over a day of banging my head against the drywall that is [[nix]], [[meson]] and [[cntr]], I found the culprit! It was Nix's `NIX_ENFORCE_PURITY` environment variable, which, while its meant to prevent any path from _outside_ the nix-store from going into a derivation, was also somehow blocking out a native lib _somehow_!
